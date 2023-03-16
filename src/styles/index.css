@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --background: #f6f1f1;
+  --principal: #19a7ce;
+  --secondary: #146c94;
+  --dark: #000000;
+  --light: #ffff;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: var(--background);
+  font-family: "Oswald", sans-serif;
+  height: 100vh;
+  padding: 0 20px;
+  overflow-x: none;
+}
+
+h2 {
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--secondary);
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  padding: 7px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid var(--secondary);
+  flex-grow: 1;
+}
+
+form {
+  background-color: var(--light);
+  border: 3px solid var(--dark);
+  width: 300px;
+  row-gap: 15px;
+  padding: 30px;
+  border-radius: 10px;
+  align-items: center;
+  justify-items: center;
+  box-shadow: -4px 6px 31px -3px rgba(0, 0, 0, 0.52);
+}
+
+.form__container-inputs {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+#btn__submit-signin,
+#btn__submit-signup,
+.btn__signin,
+.btn__signup {
+  font-family: "Oswald", sans-serif;
+  border: 2px solid var(--light);
+  background-color: var(--secondary);
+  color: var(--light);
+  text-transform: uppercase;
+  padding: 7px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: 0.5s all ease;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+#btn__submit-signin:hover,
+#btn__submit-signup:hover {
+  border: 2px solid var(--principal);
+  color: var(--principal);
+  background-color: var(--light);
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: grid;
+}
+
+.btn__signin,
+.btn__signup {
+  color: unset;
+  background-color: #efefef;
+  border: 2px solid var(--dark);
+}
+
+.btn__signin:hover,
+.btn__signup:hover {
+  background-color: #e5e5e5;
+}
+
+input {
+  font-family: "Oswald", sans-serif;
+}
+
+input::placeholder {
+  font-family: "Oswald", sans-serif;
+  opacity: 1;
+}
+
+@media screen and (width <= 600px) {
+  body {
+    padding: 0 15px;
+    height: 80vh;
+  }
+}

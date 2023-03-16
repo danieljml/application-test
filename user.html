@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./src/styles/user.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header__user">
+      <p class="user__title"></p>
+      <i
+        id="logout-icon"
+        class="bx bxs-left-arrow-square animate__animated animate__infinite infinite"
+      ></i>
+    </header>
+    <div class="container__user">
+      <div class="container__btn">
+        <button id="chat" class="btn__chat">Chat</button>
+        <button id="create-post" class="btn__create-post">crear post</button>
+      </div>
+      <h2 class="title">BLOG PERSONAL</h2>
+      <main class="container__post"></main>
+    </div>
+    <script type="module" src="src/user.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </body>
+</html>

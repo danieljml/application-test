@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --background: #f6f1f1;
+  --principal: #19a7ce;
+  --secondary: #146c94;
+  --dark: #000000;
+  --light: #ffff;
+}
+
+#btn-create-post {
+  font-family: "Oswald", sans-serif;
+  border: 2px solid var(--light);
+  background-color: var(--secondary);
+  color: var(--light);
+  text-transform: uppercase;
+  padding: 7px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: 0.5s all ease;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+#btn-create-post:hover {
+  border: 2px solid var(--principal);
+  color: var(--principal);
+  background-color: var(--light);
+}
+
+.input__content {
+  overflow-y: auto;
+  resize: none;
+  border: 2px solid var(--secondary);
+  padding: 7px 10px;
+  border-radius: 5px;
+  height: 150px;
+}
+
+input,
+.input__content {
+  font-family: "Oswald", sans-serif;
+}
+
+input::placeholder,
+.input__content::placeholder {
+  font-family: "Oswald", sans-serif;
+  opacity: 1;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  color: var(--dark);
+}
+
+input[type="date"],
+input[type="time"] {
+  color: var(--dark);
+  background-color: white;
+  box-sizing: border-box;
+  outline: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  bottom: 0;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+  color: transparent;
+  background: none;
+}
+
+input[type="date"]::-webkit-datetime-edit,
+input[type="time"]::-webkit-datetime-edit {
+  text-align: center;
+  width: 100%;
+}

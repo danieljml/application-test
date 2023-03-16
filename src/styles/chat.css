@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --background: #f6f1f1;
+  --principal: #19a7ce;
+  --secondary: #146c94;
+  --dark: #000000;
+  --light: #ffff;
+}
+
+.form__chat {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border: 3px solid var(--dark);
+  background-color: var(--light);
+  row-gap: 15px;
+  margin-bottom: 2rem;
+  box-shadow: -4px 6px 31px -3px rgba(0, 0, 0, 0.52);
+  border-radius: 10px;
+  width: 680px;
+  height: 600px;
+}
+
+.form__chat > h2 {
+  margin: 10px 0;
+}
+
+.form__chat > h2,
+.form__chat > .chat__input {
+  flex-grow: 0;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  font-family: "Oswald", sans-serif;
+  row-gap: 10px;
+  border-radius: 10px;
+  padding: 15px;
+  flex-grow: 1;
+  overflow-y: auto;
+  outline: 2px solid var(--secondary);
+  width: 100%;
+}
+
+.container__btn {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.btn__user {
+  font-family: "Oswald", sans-serif;
+  border: 2px solid var(--dark);
+  text-transform: uppercase;
+  padding: 7px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: 0.5s all ease;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.chat__input {
+  width: 100%;
+}
+
+.sms__in,
+.sms__ex {
+  display: flex;
+  width: 100%;
+}
+
+.container__sms > p {
+  margin: 0;
+  padding: 4px;
+}
+
+.container__sms > span {
+  display: block;
+  overflow-y: auto;
+  max-width: 180px;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.sms__ex > .container__sms > span {
+  outline: 1px solid var(--secondary);
+  background-color: var(--light);
+  color: var(--secondary);
+}
+
+.sms__in {
+  justify-content: flex-end;
+}
+
+.sms__in > .container__sms > span {
+  outline: 1px solid var(--light);
+  background-color: var(--secondary);
+  color: var(--light);
+}
+
+.sms__in > .container__sms > p,
+.sms__in > .container__sms > span {
+  text-align: end;
+}
+
+@media screen and (width <= 800px) {
+  .form__chat {
+    width: 90%;
+    height: 80vh;
+  }
+}

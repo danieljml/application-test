@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --background: #f6f1f1;
+  --principal: #19a7ce;
+  --secondary: #146c94;
+  --dark: #000000;
+  --light: #ffff;
+}
+
+body {
+  padding: 0 20px;
+  font-family: "Oswald", sans-serif;
+  background-color: #f6f1f1;
+  height: 100vh;
+}
+
+.header__user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 20px;
+  background-color: white;
+  box-shadow: -4px 6px 31px -3px rgba(0, 0, 0, 0.52);
+  border-radius: 10px;
+}
+
+.header__user > .user__title {
+  margin: 0;
+  padding: 0;
+}
+
+.header__user > i {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.header__user > .user__title {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.container__user {
+  box-shadow: -4px 6px 31px -3px rgba(0, 0, 0, 0.52);
+  background-color: var(--light);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container__post {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.container__user > .title {
+  text-align: center;
+  font-size: 2.25rem;
+}
+
+.post {
+  flex: 1 1 180px;
+  border-radius: 8px;
+  padding: 15px;
+  outline: 2px solid var(--light);
+  background-color: var(--secondary);
+  color: var(--light);
+}
+
+.post > .post__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.container__btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn__create-post,
+.btn__chat {
+  font-family: "Oswald", sans-serif;
+  border: 2px solid var(--dark);
+  text-transform: uppercase;
+  padding: 7px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: 0.5s all ease;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.btn__create-post:hover {
+  background-color: #e5e5e5;
+}
+
+.post-icon.bx {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+@media screen and (width <= 750px) {
+  body {
+    padding: 0 10px;
+  }
+
+  .header__user > .user__title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

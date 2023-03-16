@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+  </head>
+
+  <body>
+    <form id="form-signup" class="show animate__animated animate__backInLeft">
+      <h2>Creacion de usuario</h2>
+      <div class="form__container-inputs">
+        <input name="name" placeholder="Nombre" />
+        <input name="email" placeholder="Email" />
+        <input name="password" type="password" placeholder="Contraseña" />
+        <input
+          name="rpassword"
+          type="password"
+          placeholder="Repite la contraseña"
+        />
+      </div>
+      <button class="btn__signin">Ya tienes una cuenta?</button>
+      <button
+        type="submit"
+        id="btn__submit-signup"
+        class="animate__animated animate__infinite infinite"
+      >
+        Crear
+      </button>
+    </form>
+
+    <form
+      id="form-signin"
+      class="hidden animate__animated animate__backInRight"
+    >
+      <h2>Ingresa tu usuario</h2>
+      <div class="form__container-inputs">
+        <input name="email" placeholder="Email" />
+        <input name="password" type="password" placeholder="Contraseña" />
+      </div>
+      <button class="btn__signup">No tienes una cuenta?</button>
+      <button
+        type="submit"
+        id="btn__submit-signin"
+        class="animate__animated animate__infinite infinite"
+      >
+        Ingresar
+      </button>
+    </form>
+
+    <script type="module" src="src/index.js"></script>
+  </body>
+</html>
